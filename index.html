@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>TextMMO</title>
+
+</head>
+
+<body>
+
+    <div class="header text-red" id="top">
+        <img src="images/logo.jpg"/>
+        <p class="text-mured">v 1.0</p>
+        <br/>
+        <p class="text-orange">"This really didn't need to exist!"</p>
+    </div>
+
+    <nav class="text-orange" id="navbar">
+        <a>About</a>
+        <a href="#top"><img src="images/swords.jpg"/></a>
+        <a>Login</a>
+    </nav>
+
+    <div class="flexCont" id="flexCont">
+
+        <div class="homebox flex-left mugrey">
+
+            <div class="textPreview">
+                <p>
+            <span class="text-mured">- Player3211</span>
+            <br/><br/>
+            > Player3211 died from Bingus's <span class="text-orange">Neurotoxin Bolt</span>
+            <br/><br/>
+            [Player 3211 (2)]  no
+            <br/><br/>
+            > Bingus has initiated a PvP fight!
+            <br/>
+            > Player3211 (2) grew to level 2!
+            <br/><br/>
+            Bingus > Player3211: <span class="text-orange">1x Flask of Exp.</span>
+            <br/><br/>
+            [Bingus (32)]  i have present
+            <br/>
+            [Bingus (32)]  hey Player3211
+            <br/><br/>
+            <span class="text-green">+ Player3211</span>
+            <br/><br/>
+            <span class="text-green">You have gained <strong>30 Exp</strong></span>
+            <br/>
+            <span class="text-green">You were victorious in battle against </span>
+            <span class="text-red">Forest Pixie</span>
+                </p>
+            </div>
+
+            <br/>
+            <h2 class="text-orange">Wow!</h2>
+            <br/>
+            <p>
+                Now, <i>that's</i> the sort of engaging gameplay I've looking for! 
+            </p>
+        </div>
+
+        <div class="homebox flex-right mugrey">
+            <h2 class="text-orange">Loot and progress!</h2>
+            <br/>
+            <p>
+                Forget that the game doesn't have graphics with
+                <strong>awesome <span class="text-orange">loot</span></strong>,
+                leveling and experience, as well as tougher enemies (and players) as 
+                new areas are unlocked!
+            </p>
+            <br/>
+            <h2 class="text-orange">Become immersed!</h2>
+            <br/>
+            <p>
+                Forge ahead through the story, create your own adventure,
+                choose <strong><span class="text-green">Good</span> or 
+                <span class="text-red">Evil</span></strong>, and become the
+                champion of the text box!
+            </p>
+        </div>
+
+        <div class="homebox flex-left mugrey">
+            <p>Content</p><br/><p>Content</p><br/>
+            <p>Content</p><br/><p>Content</p><br/>
+            <p>Content</p><br/><p>Content</p><br/>
+            <p>Content</p><br/><p>Content</p><br/>
+            <p>Content</p><br/><p>Content</p><br/>
+        </div>
+
+        <div class="homebox flex-right mugrey">
+            <p>Content</p><br/><p>Content</p><br/>
+            <p>Content</p><br/><p>Content</p><br/>
+            <p>Content</p><br/><p>Content</p><br/>
+            <p>Content</p><br/><p>Content</p><br/>
+            <p>Content</p><br/><p>Content</p><br/>
+        </div>
+
+    </div>
+
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {stickNav()};
+
+        // Get the navbar/content under it
+        var navbar = document.getElementById("navbar");
+        var flexCont = document.getElementById("flexCont");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.getBoundingClientRect().top + window.scrollY + 90;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function stickNav() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("navStick");
+                flexCont.classList.add("extraMargin");
+            } else {
+                navbar.classList.remove("navStick");
+                flexCont.classList.remove("extraMargin");
+            }
+        } 
+    </script>
+
+</body>
+
+</html>

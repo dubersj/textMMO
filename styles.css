@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+.text-red {
+    color: rgb(204, 41, 54);
+}
+
+.text-mured {
+    color: rgba(204, 41, 55, 0.499);
+}
+
+.text-orange {
+    color: rgb(246, 174, 45);
+}
+
+.text-green {
+    color: rgb(99, 163, 117);
+}
+
+.text-muorange {
+    color: rgba(246, 176, 45, 0.499);
+}
+
+.mugrey {
+    color: rgb(237, 237, 244);
+    background-color: rgb(125, 133, 142);
+}
+
+body {
+    background-color: rgb(237, 237, 244);
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(41, 47, 54);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+
+    box-shadow: 
+        0px 3px 5px rgb(204, 41, 54), 
+        0px 5px 5px rgb(246, 174, 45),
+        0px -3px 5px rgb(204, 41, 54),
+        0px -5px 5px rgb(246, 174, 45);
+}
+
+.navStick {
+    position: fixed;
+    top: 0;
+}
+
+nav>* {
+    display: flex;
+    align-items: center;
+}
+  
+nav>*:nth-child(1) {
+    justify-content: left;
+}
+  
+nav>*:nth-child(2) {
+    justify-content: center;
+}
+
+nav>*:nth-child(3) {
+    justify-content: right;
+}
+
+nav a {
+    margin: 25px;
+    font-size: x-large;
+}
+
+nav img {
+    height: 50px;
+}
+
+nav a:hover {
+    color: rgba(246, 176, 45, 0.499);
+}
+
+.header {
+    background-color: rgb(41, 47, 54);
+    text-align: center;
+    margin: 20px;
+    padding: 25px;
+
+    box-shadow: -5px -5px 8px rgb(204, 41, 54), 5px 5px 8px rgb(246, 174, 45);
+}
+
+.header h1 {
+    font-size: 400%;
+}
+
+.flexCont {
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25px;
+}
+
+.extraMargin {
+    margin-top: 150px;
+}
+
+.homebox {
+    padding: 20px;
+}
+
+.flex-left, .flex-right {
+    flex: 30%;
+}
+
+@media (max-width: 800px) {
+    .flex-left, .flex-right {
+      flex: 100%;
+    }
+  }
+
+.mugrey {
+    border: 1px solid rgb(41, 47, 54);
+    box-shadow: -5px -5px 8px rgb(41, 47, 54), 5px 5px 8px rgb(41, 47, 54);
+}
+
+.textPreview{
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(41, 47, 54);
+    color: rgb(237, 237, 244);
+}
